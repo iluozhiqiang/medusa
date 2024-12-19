@@ -5,6 +5,7 @@ import {
   FilterableFulfillmentSetProps,
   FindConfig,
   FulfillmentDTO,
+  FulfillmentOption,
   FulfillmentTypes,
   IFulfillmentModuleService,
   InternalModuleDeclaration,
@@ -651,6 +652,28 @@ export default class FulfillmentModuleService
     return await this.baseRepository_.serialize<FulfillmentTypes.FulfillmentDTO>(
       fulfillment
     )
+  }
+
+  @InjectManager()
+  @EmitEvents()
+  async deleteFulfillment(
+    id: string,
+    @MedusaContext() sharedContext: Context = {}
+  ): Promise<void> {
+    const fulfillment = await this.fulfillmentService_.retrieve(
+      id,
+      {},
+      sharedContext
+    )
+
+    if (!isPresent(fulfillment.canceled_at)) {
+      throw new MedusaError(
+        MedusaError.Types.INVALID_DATA,
+        `Fulfillment with id ${fulfillment.id} needs to be canceled first before deleting`
+      )
+    }
+
+    await this.fulfillmentService_.delete(id, sharedContext)
   }
 
   @InjectManager()
@@ -1924,7 +1947,7 @@ export default class FulfillmentModuleService
 
   async retrieveFulfillmentOptions(
     providerId: string
-  ): Promise<Record<string, any>[]> {
+  ): Promise<FulfillmentOption[]> {
     return await this.fulfillmentProviderService_.getFulfillmentOptions(
       providerId
     )
