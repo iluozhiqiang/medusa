@@ -12,6 +12,7 @@ export type SidebarItemCommon = {
   loaded?: boolean
   additionalElms?: React.ReactNode
   chapterTitle?: string
+  hideChildren?: boolean
 }
 
 export type SidebarItemLink = SidebarItemCommon & {
@@ -57,6 +58,7 @@ export type SidebarSectionItems = {
 
 export type RawSidebarItem = SidebarItem & {
   autogenerate_path?: string
+  autogenerate_tags?: string
   custom_autogenerate?: string
   number?: string
 }

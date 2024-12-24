@@ -174,14 +174,14 @@ export const generatedSidebar = [
     "type": "link",
     "path": "/commerce-modules",
     "title": "Commerce Modules",
-    "isChildSidebar": true,
+    "hideChildren": true,
     "children": [
       {
         "loaded": true,
         "isPathHref": true,
         "type": "category",
         "title": "API Key Module",
-        "initialOpen": false,
+        "isChildSidebar": true,
         "children": [
           {
             "loaded": true,
@@ -360,7 +360,7 @@ export const generatedSidebar = [
         "isPathHref": true,
         "type": "category",
         "title": "Auth Module",
-        "initialOpen": false,
+        "isChildSidebar": true,
         "children": [
           {
             "loaded": true,
@@ -496,6 +496,14 @@ export const generatedSidebar = [
             "type": "sub-category",
             "title": "References",
             "children": [
+              {
+                "loaded": true,
+                "isPathHref": true,
+                "type": "link",
+                "path": "/commerce-modules/auth/events",
+                "title": "Events Reference",
+                "children": []
+              },
               {
                 "loaded": true,
                 "isPathHref": true,
@@ -681,7 +689,7 @@ export const generatedSidebar = [
         "isPathHref": true,
         "type": "category",
         "title": "Cart Module",
-        "initialOpen": false,
+        "isChildSidebar": true,
         "children": [
           {
             "loaded": true,
@@ -753,6 +761,14 @@ export const generatedSidebar = [
             "type": "sub-category",
             "title": "References",
             "children": [
+              {
+                "loaded": true,
+                "isPathHref": true,
+                "type": "link",
+                "path": "/commerce-modules/cart/events",
+                "title": "Events Reference",
+                "children": []
+              },
               {
                 "loaded": true,
                 "isPathHref": true,
@@ -1274,7 +1290,7 @@ export const generatedSidebar = [
         "isPathHref": true,
         "type": "category",
         "title": "Currency Module",
-        "initialOpen": false,
+        "isChildSidebar": true,
         "children": [
           {
             "loaded": true,
@@ -1379,7 +1395,7 @@ export const generatedSidebar = [
         "isPathHref": true,
         "type": "category",
         "title": "Customer Module",
-        "initialOpen": false,
+        "isChildSidebar": true,
         "children": [
           {
             "loaded": true,
@@ -1427,6 +1443,14 @@ export const generatedSidebar = [
             "type": "sub-category",
             "title": "References",
             "children": [
+              {
+                "loaded": true,
+                "isPathHref": true,
+                "type": "link",
+                "path": "/commerce-modules/customer/events",
+                "title": "Events Reference",
+                "children": []
+              },
               {
                 "loaded": true,
                 "isPathHref": true,
@@ -1700,7 +1724,7 @@ export const generatedSidebar = [
         "isPathHref": true,
         "type": "category",
         "title": "Fulfillment Module",
-        "initialOpen": false,
+        "isChildSidebar": true,
         "children": [
           {
             "loaded": true,
@@ -1778,6 +1802,14 @@ export const generatedSidebar = [
                 "type": "link",
                 "path": "/references/fulfillment/provider",
                 "title": "Create Fulfillment Provider Module",
+                "children": []
+              },
+              {
+                "loaded": true,
+                "isPathHref": true,
+                "type": "link",
+                "path": "/integrations/guides/shipstation",
+                "title": "Integrate ShipStation",
                 "children": []
               }
             ]
@@ -2375,7 +2407,7 @@ export const generatedSidebar = [
                     "type": "category",
                     "title": "Data Models",
                     "hasTitleStyling": true,
-                    "autogenerate_path": "/references/fulfillment_models/classes",
+                    "autogenerate_path": "/references/fulfillment_models/variables",
                     "children": [
                       {
                         "loaded": true,
@@ -2486,14 +2518,14 @@ export const generatedSidebar = [
         "isPathHref": true,
         "type": "category",
         "title": "Inventory Module",
-        "initialOpen": false,
+        "isChildSidebar": true,
         "children": [
           {
             "loaded": true,
             "isPathHref": true,
             "type": "link",
             "path": "/commerce-modules/inventory",
-            "title": "Inventory Module",
+            "title": "Overview",
             "children": []
           },
           {
@@ -2895,14 +2927,14 @@ export const generatedSidebar = [
         "isPathHref": true,
         "type": "category",
         "title": "Order Module",
-        "initialOpen": false,
+        "isChildSidebar": true,
         "children": [
           {
             "loaded": true,
             "isPathHref": true,
             "type": "link",
             "path": "/commerce-modules/order",
-            "title": "Order Module",
+            "title": "Overview",
             "children": []
           },
           {
@@ -3007,6 +3039,14 @@ export const generatedSidebar = [
             "type": "sub-category",
             "title": "References",
             "children": [
+              {
+                "loaded": true,
+                "isPathHref": true,
+                "type": "link",
+                "path": "/commerce-modules/order/events",
+                "title": "Events Reference",
+                "children": []
+              },
               {
                 "loaded": true,
                 "isPathHref": true,
@@ -4152,6 +4192,14 @@ export const generatedSidebar = [
                         "loaded": true,
                         "isPathHref": true,
                         "type": "link",
+                        "path": "/references/order/models/OrderCreditLine",
+                        "title": "OrderCreditLine",
+                        "children": []
+                      },
+                      {
+                        "loaded": true,
+                        "isPathHref": true,
+                        "type": "link",
                         "path": "/references/order/models/OrderExchange",
                         "title": "OrderExchange",
                         "children": []
@@ -4281,7 +4329,7 @@ export const generatedSidebar = [
         "isPathHref": true,
         "type": "category",
         "title": "Payment Module",
-        "initialOpen": false,
+        "isChildSidebar": true,
         "children": [
           {
             "loaded": true,
@@ -4778,14 +4826,14 @@ export const generatedSidebar = [
         "isPathHref": true,
         "type": "category",
         "title": "Pricing Module",
-        "initialOpen": false,
+        "isChildSidebar": true,
         "children": [
           {
             "loaded": true,
             "isPathHref": true,
             "type": "link",
             "path": "/commerce-modules/pricing",
-            "title": "Pricing Module",
+            "title": "Overview",
             "children": []
           },
           {
@@ -5300,7 +5348,7 @@ export const generatedSidebar = [
         "isPathHref": true,
         "type": "category",
         "title": "Product Module",
-        "initialOpen": false,
+        "isChildSidebar": true,
         "children": [
           {
             "loaded": true,
@@ -5373,6 +5421,14 @@ export const generatedSidebar = [
             "type": "sub-category",
             "title": "References",
             "children": [
+              {
+                "loaded": true,
+                "isPathHref": true,
+                "type": "link",
+                "path": "/commerce-modules/product/events",
+                "title": "Events Reference",
+                "children": []
+              },
               {
                 "loaded": true,
                 "isPathHref": true,
@@ -6055,14 +6111,14 @@ export const generatedSidebar = [
         "isPathHref": true,
         "type": "category",
         "title": "Promotion Module",
-        "initialOpen": false,
+        "isChildSidebar": true,
         "children": [
           {
             "loaded": true,
             "isPathHref": true,
             "type": "link",
             "path": "/commerce-modules/promotion",
-            "title": "Promotion Module",
+            "title": "Overview",
             "children": []
           },
           {
@@ -6466,7 +6522,7 @@ export const generatedSidebar = [
         "isPathHref": true,
         "type": "category",
         "title": "Region Module",
-        "initialOpen": false,
+        "isChildSidebar": true,
         "children": [
           {
             "loaded": true,
@@ -6506,6 +6562,14 @@ export const generatedSidebar = [
             "type": "sub-category",
             "title": "References",
             "children": [
+              {
+                "loaded": true,
+                "isPathHref": true,
+                "type": "link",
+                "path": "/commerce-modules/region/events",
+                "title": "Events Reference",
+                "children": []
+              },
               {
                 "loaded": true,
                 "isPathHref": true,
@@ -6667,7 +6731,7 @@ export const generatedSidebar = [
         "isPathHref": true,
         "type": "category",
         "title": "Sales Channel Module",
-        "initialOpen": false,
+        "isChildSidebar": true,
         "children": [
           {
             "loaded": true,
@@ -6715,6 +6779,14 @@ export const generatedSidebar = [
             "type": "sub-category",
             "title": "References",
             "children": [
+              {
+                "loaded": true,
+                "isPathHref": true,
+                "type": "link",
+                "path": "/commerce-modules/sales-channel/events",
+                "title": "Events Reference",
+                "children": []
+              },
               {
                 "loaded": true,
                 "isPathHref": true,
@@ -6844,14 +6916,14 @@ export const generatedSidebar = [
         "isPathHref": true,
         "type": "category",
         "title": "Stock Location Module",
-        "initialOpen": false,
+        "isChildSidebar": true,
         "children": [
           {
             "loaded": true,
             "isPathHref": true,
             "type": "link",
             "path": "/commerce-modules/stock-location",
-            "title": "Stock Location Module",
+            "title": "Overview",
             "children": []
           },
           {
@@ -7029,14 +7101,14 @@ export const generatedSidebar = [
         "isPathHref": true,
         "type": "category",
         "title": "Store Module",
-        "initialOpen": false,
+        "isChildSidebar": true,
         "children": [
           {
             "loaded": true,
             "isPathHref": true,
             "type": "link",
             "path": "/commerce-modules/store",
-            "title": "Store Module",
+            "title": "Overview",
             "children": []
           },
           {
@@ -7190,7 +7262,7 @@ export const generatedSidebar = [
         "isPathHref": true,
         "type": "category",
         "title": "Tax Module",
-        "initialOpen": false,
+        "isChildSidebar": true,
         "children": [
           {
             "loaded": true,
@@ -7519,14 +7591,14 @@ export const generatedSidebar = [
         "isPathHref": true,
         "type": "category",
         "title": "User Module",
-        "initialOpen": false,
+        "isChildSidebar": true,
         "children": [
           {
             "loaded": true,
             "isPathHref": true,
             "type": "link",
             "path": "/commerce-modules/user",
-            "title": "User Module",
+            "title": "Overview",
             "children": []
           },
           {
@@ -7567,6 +7639,14 @@ export const generatedSidebar = [
             "type": "sub-category",
             "title": "References",
             "children": [
+              {
+                "loaded": true,
+                "isPathHref": true,
+                "type": "link",
+                "path": "/commerce-modules/user/events",
+                "title": "Events Reference",
+                "children": []
+              },
               {
                 "loaded": true,
                 "isPathHref": true,
@@ -8084,6 +8164,22 @@ export const generatedSidebar = [
             "type": "link",
             "path": "/architectural-modules/file/s3",
             "title": "AWS",
+            "children": []
+          }
+        ]
+      },
+      {
+        "loaded": true,
+        "isPathHref": true,
+        "type": "category",
+        "title": "Fulfillment",
+        "children": [
+          {
+            "loaded": true,
+            "isPathHref": true,
+            "type": "link",
+            "path": "/integrations/guides/shipstation",
+            "title": "ShipStation",
             "children": []
           }
         ]
@@ -15087,6 +15183,14 @@ export const generatedSidebar = [
                     "type": "link",
                     "path": "/references/medusa-workflows/steps/deleteTaxRegionsStep",
                     "title": "deleteTaxRegionsStep",
+                    "children": []
+                  },
+                  {
+                    "loaded": true,
+                    "isPathHref": true,
+                    "type": "link",
+                    "path": "/references/medusa-workflows/steps/getItemTaxLinesStep",
+                    "title": "getItemTaxLinesStep",
                     "children": []
                   },
                   {
